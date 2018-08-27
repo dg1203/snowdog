@@ -74,4 +74,10 @@
   }
 
   // Your custom JavaScript goes here
+  
+  document.querySelector('#overview button').addEventListener('click', () => { 
+    const baconImg = document.querySelector('#overview img').cloneNode();
+    document.querySelector('#overview img').after(baconImg);
+  });
+
 })();
